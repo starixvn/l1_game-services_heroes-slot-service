@@ -1,1 +1,1 @@
-Heroes Slot Game
+# heroes-slot-service
