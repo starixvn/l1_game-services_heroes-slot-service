@@ -1,7 +1,7 @@
 import appConfigs from "./app-configs";
 
 export default {
-    id: 30,
+    id: 38,
     name: "HeroesSlot",
     durations: {
         wholeRound: 60,
