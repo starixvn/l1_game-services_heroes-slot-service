@@ -20,7 +20,7 @@ describe("#service-container-registry", () => {
     const defaultInjectionMode = InjectionMode.CLASSIC;
 
     describe("#extends", () => {
-        it("inherit Core.Crons.BaseBot", () => {
+        it("inherit Slot.SlotContainerRegistry", () => {
             // arrange
             const serviceContainerRegistry = new ServiceContainerRegistry(defaultInjectionMode);
 
