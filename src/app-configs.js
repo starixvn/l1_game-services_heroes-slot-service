@@ -42,7 +42,7 @@ export default {
     },
     sentry: {
         sentryUrl: "https://8f52d1ed1dbc4500adddbfb6e20f66aa@sentryuat.sabagame.com/217",
-        logIdentifier: "heroes-slot",
+        logIdentifier: "heroesslot",
         env: "LOCAL",
     },
     authenticateSettings: {
@@ -54,6 +54,7 @@ export default {
         "http://localhost:7456",
         "http://10.5.10.14:7456",
         "http://localhost:7000",
+        "http://localhost:7779",
         "http://games.lumigame.com",
         "http://admin.lumigame.com",
     ],

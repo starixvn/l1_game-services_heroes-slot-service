@@ -43,7 +43,7 @@ export default {
     },
     sentry: {
         sentryUrl: "https://bfcba2ed6dbc4d4193bba01981b2812d@sentryuat.sabagame.com/19",
-        logIdentifier: "heroes-slot",
+        logIdentifier: "heroesslot",
         env: "LOCAL",
     },
     authenticateSettings: {
