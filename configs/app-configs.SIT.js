@@ -57,6 +57,10 @@ export default {
         "https://sit-admg.sabagame.com",
         "http://sit-adm.sabagame.com",
         "https://sit-adm.sabagame.com",
+        "http://l1sit.sgamesuat.com",
+        "https://l1sit.sgamesuat.com",
+        "http://l1sitadm.sgamesuat.com",
+        "https://l1sitadm.sgamesuat.com",
     ],
     freeSpinLiveSeconds: 86400, // 1 day
     bonusLiveSeconds: 127,
