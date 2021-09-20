@@ -42,7 +42,7 @@ export default {
         },
     },
     sentry: {
-        sentryUrl: "http://52368c4019044019885440599c180bda@10.99.99.187:800/24",
+        sentryUrl: "http://52368c4019044019885440599c180bda@10.2.189.51:9009/24",
         logIdentifier: "heroesslot",
         env: "UAT",
     },
@@ -51,7 +51,16 @@ export default {
     },
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
     enableCorsWs: true,
-    corsUrls: ["http://uat.sabagame.com", "https://uat.sabagame.com", "http://uat-adm.sabagame.com", "https://uat-adm.sabagame.com"],
+    corsUrls: [
+        "http://uat.sabagame.com",
+        "https://uat.sabagame.com",
+        "http://uat-adm.sabagame.com",
+        "https://uat-adm.sabagame.com",
+        "http://l1uat.sgamesuat.com",
+        "https://l1uat.sgamesuat.com",
+        "http://l1uatm.sgamesuat.com",
+        "https://l1uatm.sgamesuat.com",
+    ],
     freeSpinLiveSeconds: 86400, // 1 day
     bonusLiveSeconds: 127,
 };
