@@ -10,9 +10,10 @@ const run = async () => {
     const definition = new SlotGameDefinition(gameSettings);
     const container = new ServiceContainerRegistry().register(appConfigs, definition, gameData);
 
-    const app = new Core.BaseGameApp(container);
+    const app = new Core.BaseGameApp("Heroes Slot", appConfigs);
 
     await app.run();
+    await app.startGame(container);
 };
 
 run();
