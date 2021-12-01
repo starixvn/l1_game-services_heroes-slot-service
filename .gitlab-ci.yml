@@ -1,3 +1,6 @@
+variables:
+  SMOKE_PRODUCT_NAME: HeroesSlot
+  
 include:
   - project: "ci/repos-ci/pentagon_l1_heroes_slot_service"
     ref: master
