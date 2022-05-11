@@ -63,5 +63,5 @@ export default {
         "https://l1sitadm.sgamesuat.com",
     ],
     freeSpinLiveSeconds: 86400, // 1 day
-    bonusLiveSeconds: 127,
+    bonusLiveSeconds: 123,
 };
