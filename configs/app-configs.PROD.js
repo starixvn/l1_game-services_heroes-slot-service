@@ -67,4 +67,5 @@ export default {
     ],
     freeSpinLiveSeconds: 86400, // 1 day
     bonusLiveSeconds: 123,
+    enableMsgpackParser: true,
 };
