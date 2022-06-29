@@ -10,19 +10,9 @@ export default {
         },
         useAuthenticate: true,
         requestTimeout: 10000,
-        placeBetTimeout: 4500,
+        placeBetTimeout: 4000,
         hitJackpotTimeout: 200000,
         enabledApiLogs: true,
-    },
-    mainServerApiSettings: {
-        url: "http://l1_game_server_sit:5000/api",
-        auth: {
-            url: "http://l1_auth_api_sit:5000",
-            id: "game-services",
-            secret: "gameservices@20luminet&",
-        },
-        requestTimeout: 10000,
-        useAuthenticate: true,
     },
     socketOptions: {
         pingInterval: 60 * 1000,
@@ -46,7 +36,15 @@ export default {
         env: "SIT",
     },
     authenticateSettings: {
+        url: "http://l1_auth_api_sit:5000",
+        id: "game-services",
+        secret: "gameservices@20luminet&",
+        requestTimeout: 10000,
+        useAuthenticate: true,
         audiences: ["api", "admin-api"],
+    },
+    userServiceSettings: {
+        url: "http://l1_user_service_sit:5000",
     },
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
     enableCorsWs: true,
@@ -64,4 +62,5 @@ export default {
     ],
     freeSpinLiveSeconds: 86400, // 1 day
     bonusLiveSeconds: 123,
+    enableMsgpackParser: true,
 };
