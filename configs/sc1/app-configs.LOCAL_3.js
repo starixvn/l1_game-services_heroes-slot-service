@@ -2,16 +2,15 @@ export default {
     hostingPort: 5000,
     apiSettings: {
         enabledApi: true,
-        apiUrl: "http://l1_game_api_AWS:5000",
-        authUrl: "http://l1_auth_api_AWS:5000",
+        apiUrl: "http://l1_game_api_local_3:5000",
+        authUrl: "http://l1_auth_api_local_3:5000",
         client: {
             id: "game-server",
             secret: "gameserver@20luminet&",
         },
         useAuthenticate: true,
-        placeBetTimeout: 4500,
         requestTimeout: 10000,
-        hitJackpotTimeout: 200000,
+        placeBetTimeout: 4000,
         enabledApiLogs: true,
     },
     socketOptions: {
@@ -23,7 +22,7 @@ export default {
     },
     enabledLogs: true,
     database: {
-        url: "mongodb://lmn_backend:Sb%7B5r%40Xy4X%256%28%24%5Bt%252HsOxJ%7CQt9jdR%26t@10.99.99.56:27101/?replicaSet=L1_SabaAWS",
+        url: "mongodb://lmn_backend:LmnBackend@10.10.50.14:27106/?replicaSet=L1pppLocal&appName=HeroesSlot",
         options: {
             dbName: "minigame",
             useNewUrlParser: true,
@@ -32,12 +31,12 @@ export default {
         },
     },
     sentry: {
-        sentryUrl: "http://58fc00e79ab34a3bab04a79038760cb8@10.99.99.187:803/8",
-        logIdentifier: "heroesslot",
-        env: "AWS",
+        sentryUrl: "https://13f39b8359404ed5aec23655e64ccf78@sentry.lumigame.com/2",
+        logIdentifier: "vip-sedie-war",
+        env: "LOCAL-3",
     },
     authenticateSettings: {
-        url: "http://l1_auth_api_AWS:5000",
+        url: "http://l1_auth_api_local_3:5000",
         id: "game-services",
         secret: "gameservices@20luminet&",
         requestTimeout: 10000,
@@ -45,11 +44,15 @@ export default {
         audiences: ["api", "admin-api"],
     },
     userServiceSettings: {
-        url: "http://localhost:8004/api",
+        url: "http://l1_user_service_local_3:5000",
     },
-    adminSecretKey: "asWDEer4yGdgsdqR4uqmKQZgh",
-    enableCorsWs: true,
-    corsUrls: ["https://sc1-games.sportsfun.app", "https://sc1-adm.sportsfun.app"],
+    adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
+    enableCorsWs: false,
+    corsUrls: ["https://localhost:7456", "https://localhost:7000", "https://l1-games3.lumigame.com", "https://l1-admin3.lumigame.com"],
+    metrics: {
+        enable: true,
+        secretKey: "6c1f0f28-70f2-46ae-b031-22624a6cd8df",
+    },
     freeSpinLiveSeconds: 86400, // 1 day
     bonusLiveSeconds: 123,
 };

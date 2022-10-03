@@ -2,16 +2,15 @@ export default {
     hostingPort: 5000,
     apiSettings: {
         enabledApi: true,
-        apiUrl: "http://l1_game_api_local_1:5000",
-        authUrl: "http://l1_auth_api_local_1:5000",
+        apiUrl: "http://l1_game_api_uat:5000",
+        authUrl: "http://l1_auth_api_uat:5000",
         client: {
             id: "game-server",
             secret: "gameserver@20luminet&",
         },
-
         useAuthenticate: true,
-        requestTimeout: 10000,
         placeBetTimeout: 4000,
+        requestTimeout: 10000, // 10s
         hitJackpotTimeout: 200000,
         enabledApiLogs: true,
     },
@@ -24,7 +23,7 @@ export default {
     },
     enabledLogs: true,
     database: {
-        url: "mongodb://lmn_backend:LmnBackend@10.10.50.14:17101/?replicaSet=L1pLocal",
+        url: "mongodb://lmn_backend:LmnBackend%4022027@10.99.99.187:27201/?replicaSet=SabaUAT&appName=HeroesSlot",
         options: {
             dbName: "minigame",
             useNewUrlParser: true,
@@ -33,12 +32,12 @@ export default {
         },
     },
     sentry: {
-        sentryUrl: "https://13f39b8359404ed5aec23655e64ccf78@sentry.lumigame.com/2",
+        sentryUrl: "http://52368c4019044019885440599c180bda@10.2.189.51:9009/24",
         logIdentifier: "heroesslot",
-        env: "LOCAL_1",
+        env: "UAT",
     },
     authenticateSettings: {
-        url: "http://l1_auth_api_local_1:5000",
+        url: "http://l1_auth_api_uat:5000",
         id: "game-services",
         secret: "gameservices@20luminet&",
         requestTimeout: 10000,
@@ -46,12 +45,21 @@ export default {
         audiences: ["api", "admin-api"],
     },
     userServiceSettings: {
-        url: "http://l1_user_service_local_1:5000",
+        url: "http://l1_user_service_uat:5000",
     },
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
     enableCorsWs: true,
-    corsUrls: ["http://localhost:7456", "http://localhost:7000", "https://l1-games1.lumigame.com", "https://l1-admin1.lumigame.com"],
+    corsUrls: [
+        "http://uat.sabagame.com",
+        "https://uat.sabagame.com",
+        "http://uat-adm.sabagame.com",
+        "https://uat-adm.sabagame.com",
+        "http://l1uat.sgamesuat.com",
+        "https://l1uat.sgamesuat.com",
+        "http://l1uatm.sgamesuat.com",
+        "https://l1uatm.sgamesuat.com",
+    ],
     freeSpinLiveSeconds: 86400, // 1 day
     bonusLiveSeconds: 123,
-    enableMsgpackParser: false,
+    enableMsgpackParser: true,
 };

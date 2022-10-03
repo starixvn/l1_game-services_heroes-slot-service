@@ -2,8 +2,8 @@ export default {
     hostingPort: 5000,
     apiSettings: {
         enabledApi: true,
-        apiUrl: "http://l1_game_api_local:5000",
-        authUrl: "http://l1_auth_api_local:5000",
+        apiUrl: "http://l2_game_api_uat:5000",
+        authUrl: "http://l2_auth_api_uat:5000",
         client: {
             id: "game-server",
             secret: "gameserver@20luminet&",
@@ -11,19 +11,17 @@ export default {
         useAuthenticate: true,
         requestTimeout: 10000,
         placeBetTimeout: 4000,
-        hitJackpotTimeout: 200000,
-        enabledApiLogs: true,
+        enableApiLogs: true,
     },
     socketOptions: {
         pingInterval: 60 * 1000,
         pingTimeout: 60 * 1000,
         transports: ["websocket"],
         allowUpgrades: false,
-        perMessageDeflate: false,
     },
     enabledLogs: true,
     database: {
-        url: "mongodb://lmn_backend:LmnBackend@10.10.50.13:27101/?replicaSet=L1Local",
+        url: "mongodb://lmn_backend:LmnBackend%4022027@10.99.99.187:37201/?replicaSet=SabaL2UAT&appName=HeroesSlot",
         options: {
             dbName: "minigame",
             useNewUrlParser: true,
@@ -32,12 +30,12 @@ export default {
         },
     },
     sentry: {
-        sentryUrl: "https://13f39b8359404ed5aec23655e64ccf78@sentry.lumigame.com/2",
+        sentryUrl: "http://8ac47fca6d3e4a41908896a64ef201ac@10.2.189.51:9009/53",
         logIdentifier: "heroesslot",
-        env: "LOCAL",
+        env: "UAT",
     },
     authenticateSettings: {
-        url: "http://l1_auth_api_local:5000",
+        url: "http://l2_auth_api_uat:5000",
         id: "game-services",
         secret: "gameservices@20luminet&",
         requestTimeout: 10000,
@@ -45,17 +43,24 @@ export default {
         audiences: ["api", "admin-api"],
     },
     userServiceSettings: {
-        url: "http://l1_user_service_local:5000",
+        url: "http://l2_user_service_uat:5000",
     },
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
-    enableCorsWs: true,
-    corsUrls: [
-        "http://localhost:7456",
-        "http://10.5.10.14:7456",
-        "http://localhost:7000",
-        "https://games.lumigame.com",
-        "https://admin.lumigame.com",
-    ],
-    freeSpinLiveSeconds: 86400, // 1 day
+    enableCorsWs: false,
     bonusLiveSeconds: 123,
+    corsUrls: [
+        "http://uat.v-gaming.net",
+        "https://uat.v-gaming.net",
+        "http://uatadm.v-gaming.net",
+        "https://uatadm.v-gaming.net",
+        "http://muat.v-gaming.net",
+        "https://muat.v-gaming.net",
+        "https://l2uat.sgamesuat.com",
+        "http://l2uat.sgamesuat.com",
+        "http://l2uatadm.sgamesuat.com",
+        "https://l2uatadm.sgamesuat.com",
+        "http://l2uatm.sgamesuat.com",
+        "https://l2uatm.sgamesuat.com",
+    ],
+    enableMsgpackParser: true,
 };
