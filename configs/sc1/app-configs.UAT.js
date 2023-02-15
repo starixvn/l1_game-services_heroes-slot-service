@@ -48,17 +48,6 @@ export default {
         url: "http://l1_user_service_uat:5000",
     },
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
-    enableCorsWs: true,
-    corsUrls: [
-        "http://uat.sabagame.com",
-        "https://uat.sabagame.com",
-        "http://uat-adm.sabagame.com",
-        "https://uat-adm.sabagame.com",
-        "http://l1uat.sgamesuat.com",
-        "https://l1uat.sgamesuat.com",
-        "http://l1uatm.sgamesuat.com",
-        "https://l1uatm.sgamesuat.com",
-    ],
     freeSpinLiveSeconds: 86400, // 1 day
     bonusLiveSeconds: 123,
     enableMsgpackParser: true,
