@@ -9,7 +9,7 @@ import {
     createPartnerConfig,
 } from "sc-game-service-integration-utils";
 
-import appConfigs from "../../../src/app-configs";
+import appConfigs from "../../../src/app-configs.IGT";
 import { RoundModel } from "../../../src/models";
 import { currencyData, game, gameConfig, rounds } from "./test-data";
 
